@@ -5,22 +5,22 @@
 //check to make sure there is no whitespace
 
 
-let password = 'oKsothisappe2m'
+let password = 'fr1edChicken'
 let passwordArray = password.split('')
 let letterCheck = /[a-z]/
 let numberCheck = /[0-9]/
 let x = false
-console.log(passwordArray)
+//console.log(passwordArray)
 let capitals = /[A-Z]/
 
 
 if(passwordArray.length > 10 && passwordArray.length < 20 ){ // checks for maximum length and minimum length
-    if(letterCheck.test(password)){        // checks to make sure that it has letters
-        console.log('success')
-        if(numberCheck.test(password)){ // checks that it has numbers
-            console.log('success')
+    if(password.search(letterCheck) > -1){        // checks to make sure that it has letters
+        //console.log('success')
+        if(password.search(numberCheck) > 0){ // checks that it has numbers
+            //console.log('success')
             if(password.includes(" ") !== true){ // checks to make sure it has no whitespace
-                console.log('success')
+                //console.log('success')
                 if(capitals.test(password) === true){ // checks to make sure it has capitals
                     console.log('success')
                     console.log('                                         __          \n' 
