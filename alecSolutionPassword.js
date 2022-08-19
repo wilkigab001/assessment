@@ -28,6 +28,8 @@ if(password.length >= 10 && password.length < 20){
 
 if(minChars && upperCheck && numCheck && letterCheck){
     console.log('success')
+} else{
+    console.log('failure')
 }
 
 console.log(letterCheck)
